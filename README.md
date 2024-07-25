@@ -15,7 +15,7 @@
     <br/>
   </p>
   
-![Forks](https://img.shields.io/github/forks/ZeadShalaby/ChatBot?style=social) ![Issues](https://img.shields.io/github/issues/ZeadShalaby/ChatBot) ![License](https://img.shields.io/github/license/ZeadShalaby/ChatBot)
+![Forks](https://img.shields.io/github/forks/ZeadShalaby/Simple-To-Do-List-Application?style=social) ![Issues](https://img.shields.io/github/issues/ZeadShalaby/Simple-To-Do-List-Application) ![License](https://img.shields.io/github/license/ZeadShalaby/Simple-To-Do-List-Application)
 
 
 ## Table Of Contents
