@@ -126,6 +126,15 @@ class TasksController extends Controller
       return $this->returnData("tasks",$task);
     }
 
+    /**
+     * todo Filtering the Trash Tasks in all categories.
+     */
+    public function filterTrash(Request $request)
+    {
+      $task = Tasks::onlyTrashed()->where("user_id",auth()->user()->id)->where("status",strtolower($request->filter))->get();
+      return $this->returnData("tasksTrashed",$task);
+    }
+
 
 
     /**

@@ -1,5 +1,7 @@
 <script setup>
 import HeaderPage from '../Header-Footer/HeaderPage.vue';
+// import { BPagination } from 'bootstrap-vue'
+
 </script>
 
 <template>
@@ -9,41 +11,67 @@ import HeaderPage from '../Header-Footer/HeaderPage.vue';
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
-    <title> Trash Task </title>
+    <title> Tasks List </title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
 <body>
  <header>
  <HeaderPage/>
-   <div class="content">
-     <div class="text-content">
-       <div class="text">Trash </div>
-       <div class="name">task</div>
-       <div class="job">
-         <div class="job">
-           <span>And its ,</span>
-            <div class="typing-text">
-              <span class="one">Tasks,</span>
-              <span class="two">To-Do-List.</span>
-            </div>
-          </div>
-       </div>
-    <div class="buttons">
-   <button>About Us</button>
-   <button>Follow Us</button>
- </div>
-     </div>
-     <div class="girl">
-       <img src="../../assets/image/image (2).png" alt="">
-     </div>
-   </div>
+   
+
+
+<table class="containeres">
+
+  <thead>
+    
+    <div>
+      <img src="../../assets/image/checklist.png" alt="NEW Tak" style="width: 30px; cursor: pointer;" @click="FilterDone()"/>
+      <img src="../../assets/image/hourglass.png" alt="NEW Tak" style="width: 30px; cursor: pointer;" @click="FilterTime()"/>
+
+    </div>
+    
+      <tr>
+
+      <th><h1>Num    `</h1></th>
+      <th><h1>Title  `</h1></th>
+      <th><h1>Description</h1></th>
+      <th><h1>Status    `</h1></th>
+      <th><h1>Due Dates</h1></th>
+      <th><h1>Button    `</h1></th>
+
+    </tr>
+  </thead>
+  <tbody>
+     <tr v-for="item in tasks" :key="item.id">
+      <td>{{ item.id }}</td>
+      <td>{{ item.title }}</td>
+      <td>{{ item.description }}</td>
+      <td>{{ item.status }}</td>
+      <td>{{ item.due_dates }}</td>
+      <td> <img src="../../assets/image/restore0.png" alt="restore" style="width: 32px; cursor: pointer;" @click="RestoreTask(item.id) "/></td>
+
+    </tr> 
+    <br>
+    <div class="pagination">
+  <a href="#">&laquo;</a>
+  <a class="active" href="#">1</a>
+  <a  href="#">2</a>
+  <a href="#">&raquo;</a>
+</div>
+ 
+</tbody>
+
+</table>
+
    <div class="media-icons">
+   
     <a href="#"><i class="fab fa-facebook-f"></i></a>
     <a href="#"><i class="fab fa-twitter"></i></a>
     <a href="#"><i class="fab fa-linkedin-in"></i></a>
     <a href="#"><i class="fab fa-pinterest"></i></a>
   </div>
+  
  </header>
 </body>
 </html>
@@ -51,96 +79,31 @@ import HeaderPage from '../Header-Footer/HeaderPage.vue';
 </template>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins',sans-serif;
-}
-header{
-  height: 100vh;
-  width: 100%;
-  /* background: url("images/background.png") no-repeat; */
-  background-position: center;
-}
-::selection{
-  background: #a3f5ec;
-}
 
 
-.text-content{
-  position: absolute;
-  top: 33%;
-  left: 7%;
-  z-index: 12;
+.pagination {
+text-align: left;  
+display: flex;
 }
-header .text-content .text{
-  font-size: 27px;
-  color: #2c3350;
-}
-header .text-content .name{
-color: #2c3350;
- font-size: 75px;
- font-weight: 600;
- margin: -20px 0 0 -3px;
-}
-header .text-content .job{
- color: #2c3350;
- font-size: 40px;
- margin: 5px 0;
- margin-top: -4px;
- display: flex;
-}
-.text-content .typing-text{
-  margin-left: 10px;
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 4px solid #1de2d1;
-  animation: typing 5s steps(15) infinite;
-}
-@keyframes typing{
-  0%{
-    width: 0ch;
-  }
-  50%{
-    width: 15ch;
-  }
-  100%{
-    width: 0ch;
-  }
-}
-.text-content .job .one{
-  color: #1de2d1;
-}
-.text-content .job .two{
-  color: #1de2d1;
-}
-.buttons{
-  margin: 20px 0 0 50px;
-}
-.text-content .buttons button{
-  outline: none;
-  margin: 0 10px;
-  border: none;
-  border-radius: 6px;
-  font-size: 18px;
-  color: #fff;
+
+.pagination a {
+  color: black;
+  float: left;
   padding: 8px 16px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  background-image: linear-gradient( 135deg, #2AFADF     10%, #C346C2 100%);
+  text-decoration: none;
 }
-.buttons button:hover{
-  transform: scale(0.97);
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 20px;
 }
-.content .girl img{
-  position: absolute;
-  height: 90%;
-  bottom: 0;
-  right: 50px;
-  position: absolute;
-}
+
+.pagination a:hover:not(.active) {background-color: #8abb8b;  border-radius: 20px;}
+
+
+/**************************************** */
+
 header .media-icons{
   display: flex;
   flex-direction: column;
@@ -154,27 +117,226 @@ header .media-icons{
  font-weight: 500;
  text-decoration: none;
  opacity: 0.7;
- color: #2c3350;
+ color: linear-gradient(135deg, #9a15ce , #218ed6);
  transition: all 0.3s ease;
 }
 .media-icons a:hover{
  opacity: 1;
 }
+
+/*****/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+
+
+h1 {
+  font-size:3em; 
+  font-weight: 300;
+  line-height:1em;
+  text-align: center;
+  color: #4DC3FA;
+}
+
+h2 {
+  font-size:1em; 
+  font-weight: 300;
+  text-align: center;
+  display: block;
+  line-height:1em;
+  padding-bottom: 2em;
+  color: #FB667A;
+}
+
+h2 a {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FB667A;
+  text-decoration: none;
+}
+
+.blue { color: #185875; }
+.yellow { color: #42e3ff; }
+
+.containeres th h1 {
+    font-weight: bold;
+    font-size: 1em;
+  text-align: left;
+  color: #139cdb;
+}
+
+.containeres td {
+    font-weight: normal;
+    font-size: 0.5em;
+  -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+     -moz-box-shadow: 0 2px 2px -2px #0E1119;
+          box-shadow: 0 2px 2px -2px #0E1119;
+}
+
+.containeres {
+    text-align: left;
+    width: 890px;
+    margin: 0 auto;
+    display: table;
+    padding: 0 0 8em 0;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    margin-top: -430px;
+
+}
+
+.containeres td, .containeres th {
+    padding-bottom: 2%;
+    padding-top: 2%;
+  padding-left:2%;  
+}
+
+/* Background-color of the odd rows */
+.containeres tr:nth-child(odd) {
+    background-color: #323C50;
+}
+
+/* Background-color of the even rows */
+.containeres tr:nth-child(even) {
+    background-color: #2c3e46;
+}
+
+.containeres th {
+    background-color: #1F2739;
+}
+
+.containeres td:first-child { color: #FB667A; }
+
+.containeres tr:hover {
+   background-color: #464A52;
+-webkit-box-shadow: 0 6px 6px -6px #0E1119;
+     -moz-box-shadow: 0 6px 6px -6px #0E1119;
+          box-shadow: 0 6px 6px -6px #0E1119;
+}
+.containeres td{
+  color: #dcdcdc;
+  font-weight: bold;
+  font-size: 0.5em;
+}
+.containeres td:hover {
+  background-color: #42fcff;
+  color: #000000;
+  font-weight: bold;
+  box-shadow: #207176 -1px 1px, #207176 -2px 2px, #207176 -3px 3px, #207176 -4px 4px, #207176 -5px 5px, #207176 -6px 6px;
+  transform: translate3d(6px, -6px, 0);
+  
+  transition-delay: 0s;
+    transition-duration: 0.4s;
+    transition-property: all;
+  transition-timing-function: line;
+}
+
+@media (max-width: 800px) {
+.containeres td:nth-child(4),
+.containeres th:nth-child(4) { display: none; }
+}
 </style>
-
-
-
 <script>
+import axios from 'axios';
+
 export default {
-  name: "TrashTask",
-  mounted(){
-    let user = localStorage.getItem('users');
-    console.log(user);
-    if(!user){
-      this.$router.push({name:'Login'})
+  name: "TrashLists",
+  data() {
+    return {
+      tasks: [],
+      currentPage: 1,
+      auth_token: "",
+      rows: 2,
+      perPage: 10,
+    };
+  },
+
+  methods: {
+
+    // Restore task of list (soft delete) 
+    async RestoreTask(id) {
+      let user = JSON.parse(localStorage.getItem('users'));
+      console.log(id);
+
+      try {
+        let result = await axios.post("http://localhost:8000/api/task/restore/tasks", {
+          auth_token: user.token,
+          taskId: id
+        });
+        if (result.status === 200) {
+          this.fetchTasks();
+        }
+        console.log(result.data);
+      } catch (error) {
+        console.error("There was an error restoring the task:", error);
+      }
+    },
+
+
+    // fetch data of list completed 
+    FilterDone() {
+      let filters = JSON.parse(localStorage.getItem('filter'));
+      if (filters === "completed") {
+        localStorage.removeItem("filter");
+      } else {
+        localStorage.setItem('filter', JSON.stringify("completed")); // task done
+      }
+      this.fetchTasks();
+    },
+
+    // fetch data of list pending 
+    FilterTime() {
+      let filters = JSON.parse(localStorage.getItem('filter'));
+      if (filters === "pending") {
+        localStorage.removeItem("filter");
+      } else {
+        localStorage.setItem('filter', JSON.stringify("pending")); // task not done yet
+      }
+      this.fetchTasks();
+    },
+
+    // fetch data of list 
+    async fetchTasks() {
+      let user = JSON.parse(localStorage.getItem('users'));
+      let cat = JSON.parse(localStorage.getItem('cat'));
+      let filter = JSON.parse(localStorage.getItem('filter'));
+
+      if (!user) {
+        this.$router.push({ name: 'Login' });
+        return;
+      }
+
+      try {
+        let result;
+        if (!filter) {
+          result = await axios.get("http://localhost:8000/api/task/retrieve/tasks/trashed", {
+
+            params: {
+              auth_token:user.token,
+              catId: cat
+            }
+          });
+          console.log("not found");
+        } else {
+          result = await axios.get("http://localhost:8000/api/task/filtering/tasks/trash", {
+            params: {
+              auth_token:user.token,
+              filter: filter,
+              catId: cat
+            }
+          });
+          console.log("found");
+        }
+        this.tasks = result.data.tasksTrashed;
+        this.currentPage = 1;          // Reset to first page on fetch
+        console.log(result.data);
+      } catch (error) {
+        console.error("There was an error retrieving the tasks:", error);
+      }
     }
+  },
+  
+  async mounted() {
+    await this.fetchTasks();
   }
 };
 </script>
-
-

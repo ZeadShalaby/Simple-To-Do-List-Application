@@ -24,6 +24,7 @@ import HeaderPage from '../Header-Footer/HeaderPage.vue';
 <table class="containeres">
 
   <thead>
+    
     <div>
       <img src="../../assets/image/add1.png" alt="NEW Tak" style="width: 30px; cursor: pointer;" @click="NewTask()"/>
       <img src="../../assets/image/checklist.png" alt="NEW Tak" style="width: 30px; cursor: pointer;" @click="FilterDone()"/>
@@ -52,31 +53,26 @@ import HeaderPage from '../Header-Footer/HeaderPage.vue';
       <td><img src="../../assets/image/edit.png" alt="edit" style="width: 20px; cursor: pointer;" @click="UpdateTask(item.id) "/> <img src="../../assets/image/delete.png" alt="delete" style="width: 20px; cursor: pointer;" @click="DeleteTask(item.id) "/></td>
 
     </tr> 
+    <br>
+    <div class="pagination">
+  <a href="#">&laquo;</a>
+  <a class="active" href="#">1</a>
+  <a  href="#">2</a>
+  <a href="#">&raquo;</a>
+</div>
  
-    
-  </tbody>
+</tbody>
 
 </table>
 
-
-<!-- pagination 
-<b-containeres>
-  <b-pagination
-  v-model = "currentPage"
-  :total-rows = "rows"
-  :per-page = "perPage">
-</b-pagination>
-</b-containeres> -->
-
-    <!-- <button v-on:click="NewTask">Add Task</button>
-   <button v-on:click="UpdateTask">Update Task </button> -->
-
    <div class="media-icons">
+   
     <a href="#"><i class="fab fa-facebook-f"></i></a>
     <a href="#"><i class="fab fa-twitter"></i></a>
     <a href="#"><i class="fab fa-linkedin-in"></i></a>
     <a href="#"><i class="fab fa-pinterest"></i></a>
   </div>
+  
  </header>
 </body>
 </html>
@@ -84,6 +80,30 @@ import HeaderPage from '../Header-Footer/HeaderPage.vue';
 </template>
 
 <style scoped>
+
+
+.pagination {
+text-align: left;  
+display: flex;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 20px;
+}
+
+.pagination a:hover:not(.active) {background-color: #8abb8b;  border-radius: 20px;}
+
+
+/**************************************** */
 
 header .media-icons{
   display: flex;
@@ -330,4 +350,3 @@ export default {
   }
 };
 </script>
-

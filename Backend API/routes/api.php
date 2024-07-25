@@ -63,6 +63,7 @@ Route::group(['middleware' => ['api']], function () {
         Route::PUT('/update/task', [TasksController::class, 'update']);
         Route::DELETE('/soft-deleted/task', [TasksController::class, 'destroy']);
         Route::GET('/filtering/tasks', [TasksController::class, 'filter']);
+        Route::GET('/filtering/tasks/trash', [TasksController::class, 'filterTrash']);
         Route::GET('/retrieve/tasks/trashed', [TasksController::class, 'restoreindex']);
         Route::POST('/restore/tasks', [TasksController::class, 'restore']);
         Route::GET('/auto/complete/search', [TasksController::class, 'autocolmpletesearch']);
