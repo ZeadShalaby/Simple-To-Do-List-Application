@@ -70,7 +70,7 @@
 
 
 
-<img src="https://imgur.com/undefined.png" alt="project(Coise-User)" width="1200" height="450">
+<img src="https://imgur.com/o2w3KNi.png" alt="project(Coise-User)" width="1200" height="450">
 
 
 
