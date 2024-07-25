@@ -35,20 +35,20 @@
 
 📌Welcome Page :
 
-<img src="https://imgur.com/undefined.png" alt="project(Coise-User)" width="1350" height="450">
+<img src="https://imgur.com/eL5KoXK.png" alt="project(Coise-User)" width="1350" height="450">
 
 
 
 📌Home Page :
 
-<img src="https://imgur.com/undefined.png" alt="project(Coise-User)" width="1200" height="450">
+<img src="https://imgur.com/apLNOax.png" alt="project(Coise-User)" width="1200" height="450">
 
 
 
 📌Category Page :
 
 
-<img src="https://imgur.com/undefined.png" alt="project(Coise-User)" width="1200" height="450">
+<img src="https://imgur.com/vvJkRsd.png" alt="project(Coise-User)" width="1200" height="450">
 
 
 📌Task Page :
