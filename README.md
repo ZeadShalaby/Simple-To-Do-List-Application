@@ -55,7 +55,7 @@
 📌Task Page :
 
 
-<img src="https://imgur.com/9qL3wAV.png" alt="project(Coise-User)" width="1200" height="450">
+<img src="https://imgur.com/bpyJb8Y.png" alt="project(Coise-User)" width="1200" height="450">
 
 
 
@@ -63,7 +63,7 @@
 
 
 
-<img src="https://imgur.com/BJqO60v.png" alt="project(Coise-User)" width="1200" height="470">
+<img src="https://imgur.com/FDv5CfQ.png" alt="project(Coise-User)" width="1200" height="470">
 
 
 
