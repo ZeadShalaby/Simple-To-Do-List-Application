@@ -206,7 +206,7 @@ http://localhost:8080/
 
 ```
 
-<!---
+
 ### Running via container
 
 pull the image 
@@ -236,7 +236,7 @@ docker pull zeadshalaby/tdl
  go to the following page
  ```
  <container-ip>:8000
- ``` --->
+ ``` 
 
 ## Contributing
 
