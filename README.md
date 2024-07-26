@@ -88,7 +88,7 @@
 </p>
 
 ## About The Project
-it's a game coded in Backend Laravel .
+it's a projects coded in Backend Laravel .
 Frontend Vue.Js.
 Describe of the Project:
 A Task list makes it easy to bring all those simple tasks, as well as complex ones, to a single place so you don't have to waste time thinking
