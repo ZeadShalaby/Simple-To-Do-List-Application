@@ -6,11 +6,11 @@
       <img src="../../assets/image/logo.png" alt="">
      </div>
      <ul class="menu">
-        <li><a href="#" v-on:click="home" >Home</a></li>
-        <li><a href="#" v-on:click="tasks">Tasks</a></li>
-        <li><a href="#" v-on:click="category">Category</a></li>
-        <li><a href="#" v-on:click="trash">Trash</a></li>
-        <li><a href="#" v-on:click="logout" >Logout</a></li>
+        <li><a href="#" v-on:click="home" ><img src="../icons/icons8-home-64.png" style="width: 25.5px;"> Home</a></li>
+        <li><a href="#" v-on:click="tasks"><img src="../icons/icons8-tasks-64.png" style="width: 30px;"> Tasks</a></li>
+        <li><a href="#" v-on:click="category"><img src="../icons/icons8-category-50.png" style="width: 27px;"> Category</a></li>
+        <li><a href="#" v-on:click="trash"><img src="../icons/icons8-trash-48.png" style="width: 30px;"> Trash</a></li>
+        <li><a href="#" v-on:click="logout" ><img src="../icons/icons8-logout-48 (1).png" style="width: 30px;"> Logout</a></li>
       </ul>
       <div class="search-box">
         <input type="text" placeholder="Search here...">

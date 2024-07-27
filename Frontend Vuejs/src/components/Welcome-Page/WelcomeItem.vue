@@ -1,4 +1,3 @@
-
 <script setup>
 import { useRouter } from 'vue-router';
 
@@ -16,17 +15,20 @@ const goToLogin = () => {
 
 <template>
 
-<!DOCTYPE html>
-<!-- Coding By CodingNepal - www.codingnepalweb.com -->
-<html lang="en">
+  <!DOCTYPE html>
+  <!-- Coding By CodingNepal - www.codingnepalweb.com -->
+  <html lang="en">
+
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Website HTML and CSS | CodingNepal</title>
     <link rel="stylesheet" href="style.css">
     <!-- Google Fonts Links For Icon -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
   </head>
+
   <body>
     <header>
       <nav class="navbar">
@@ -36,30 +38,32 @@ const goToLogin = () => {
           <li><a href="#"></a></li>
           <li><a href="#"></a></li>
           <li><a href="#"></a></li>
-          <li><a href="#" @click="goToLogin">SignIn</a></li>
-          <li><a href="#" @click="goToRegist">SignUp</a></li>
+          <li><a href="#" @click="goToLogin"><img src="../icons/login.png" style="width: 25.5px;"> SignIn</a></li>
+          <li><a href="#" @click="goToRegist"><img src="../icons/icons8-add-bookmark-64.png" style="width: 28px;">
+              SignUp</a></li>
         </ul>
         <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
       </nav>
     </header>
 
     <section class="hero-section">
-      
+
       <div class="content">
-        <img src="../../assets/image/logo.png" alt="" style="width: 50%;margin-left: 170px;margin-top: -150px">    
+        <img src="../../assets/image/logo.png" alt="" style="width: 50%;margin-left: 170px;margin-top: -150px">
         <h2>Start Your Day Working in tasks</h2>
         <p>
-            Build a Simple To-Do List Application enjoyed by 
+          Build a Simple To-Do List Application enjoyed by
           people around the world.Awaken your senses with a steaming cup of liquid motivation.
         </p>
         <button>Order Now</button>
       </div>
     </section>
 
-   
-    
+
+
   </body>
-</html>
+
+  </html>
 
 </template>
 
@@ -195,8 +199,9 @@ header .navbar {
     font-size: 1.7rem;
   }
 
-    
-  #hamburger-btn, #close-menu-btn {
+
+  #hamburger-btn,
+  #close-menu-btn {
     display: block;
   }
 
@@ -232,11 +237,9 @@ header .navbar {
     font-size: 2.3rem;
     line-height: 60px;
   }
-  
+
   .hero-section .content button {
     padding: 9px 18px;
   }
 }
 </style>
-
-
