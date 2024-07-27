@@ -36,13 +36,13 @@
 
 📌Welcome Page :
 
-<img src="https://imgur.com/eL5KoXK.png" alt="project(Coise-User)" width="1350" height="450">
+<img src="https://imgur.com/2RDSG60.png" alt="project(Coise-User)" width="1350" height="450">
 
 
 
 📌Home Page :
 
-<img src="https://imgur.com/apLNOax.png" alt="project(Coise-User)" width="1200" height="450">
+<img src="https://imgur.com/qCcg69m.png" alt="project(Coise-User)" width="1200" height="450">
 
 
 
@@ -55,7 +55,22 @@
 📌Task Page :
 
 
-<img src="https://imgur.com/bpyJb8Y.png" alt="project(Coise-User)" width="1200" height="450">
+<img src="https://imgur.com/d0tbnrl.png" alt="project(Coise-User)" width="1200" height="450">
+
+
+
+📌New Task :
+
+
+<img src="https://imgur.com/mMhhitu.png" alt="project(Coise-User)" width="1200" height="450">
+
+
+
+📌Edit Task : 
+
+
+
+<img src="https://imgur.com/rrBpElr.png" alt="project(Coise-User)" width="1200" height="470">
 
 
 
@@ -63,7 +78,7 @@
 
 
 
-<img src="https://imgur.com/FDv5CfQ.png" alt="project(Coise-User)" width="1200" height="470">
+<img src="https://imgur.com/5UrsEH5.png" alt="project(Coise-User)" width="1200" height="470">
 
 
 
@@ -71,7 +86,7 @@
 
 
 
-<img src="https://imgur.com/o2w3KNi.png" alt="project(Coise-User)" width="1200" height="450">
+<img src="https://imgur.com/VEt2TAY.png" alt="project(Coise-User)" width="1200" height="450">
 
 
 
