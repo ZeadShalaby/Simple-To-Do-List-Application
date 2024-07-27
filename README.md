@@ -49,7 +49,7 @@
 📌Category Page :
 
 
-<img src="https://imgur.com/vvJkRsd.png" alt="project(Coise-User)" width="1200" height="450">
+<img src="https://imgur.com/BC6yIVs.png" alt="project(Coise-User)" width="1200" height="450">
 
 
 📌Task Page :
