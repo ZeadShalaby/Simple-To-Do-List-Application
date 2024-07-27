@@ -62,7 +62,7 @@
 📌New Task :
 
 
-<img src="https://imgur.com/mMhhitu.png" alt="project(Coise-User)" width="1200" height="450">
+<img src="https://imgur.com/Qi0MLcD.png" alt="project(Coise-User)" width="1200" height="450">
 
 
 
@@ -70,7 +70,7 @@
 
 
 
-<img src="https://imgur.com/rrBpElr.png" alt="project(Coise-User)" width="1200" height="470">
+<img src="https://imgur.com/2IqWII3.png" alt="project(Coise-User)" width="1200" height="470">
 
 
 
