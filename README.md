@@ -233,13 +233,13 @@ docker pull zeadshalaby/tdl
  run the container
 
  ```
- docker run --name lms -p 8000:8000 -d zeadshalaby/tdl
+ docker run --name tdl -p 8000:8000 -d zeadshalaby/tdl
  ```
  
  connect to Container Terminal
  
  ```
- docker exec -it lms /bin/sh
+ docker exec -it tdl /bin/sh
  ```
  
  make the migrations to update the database
