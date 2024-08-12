@@ -31,7 +31,7 @@
 * [Contributing](#contributing)
 * [Authors](#authors)
 * [Screenshots](#Screenshots)
-
+* [Postman Collection](#postman-ccollection)
 
 
 📌Welcome Page :
@@ -251,7 +251,20 @@ docker pull zeadshalaby/tdl
  go to the following page
  ```
  <container-ip>:8000
- ``` 
+ ```
+
+## postman-ccollection
+
+1. **Import the Postman Collection**:
+   - Open Postman.
+   - Click on "Import" and upload the `List Tasks.postman_collection.json` file.
+
+2. **Set Base URL in Postman**:
+   - Click on "Environments" and create a new environment.
+   - Set a variable `baseUrl` to `http://127.0.0.1:8000`.
+
+3. **Send Requests**:
+   - Select the imported collection and run the requests to test the API endpoints.
 
 ## Contributing
 
