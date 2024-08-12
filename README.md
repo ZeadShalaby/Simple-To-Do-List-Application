@@ -3,12 +3,10 @@
 <p align="center">
   <a href="https://github.com/ZeadShalaby/Simple-To-Do-List-Application">
           <img src="https://imgur.com/sbogsFZ.png?w=1600" alt="Logo" width="470" height="370">
-    
   </a>
 
 <h3 align="center"> Simple-To-Do-List-Application </h3>
 <h3 align="center"> it's a project can restore tasks and filter it , Login with username || Gmail  </h3>
-
   <p align="center">
      Project Simple-To-Do-List-Application
     <br/>
